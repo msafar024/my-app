@@ -12,16 +12,27 @@ const Bar = ({ searchQuery, onSearchQueryChange }) => {
     }
   };
 
+  const handleLogoClick = () => {
+    window.location.reload();
+  };
+
   const performSearch = () => {
     onSearchQueryChange(searchQuery);
   };
 
   return (
     <div className="bar-container">
-      <div className="app-name">SpectreNews</div>
+      <div className="app-name" onClick={handleLogoClick}> {/* Add onClick handler here */}
+        SpectreNews
+      </div>
       <div className="navigation">
         <a href="/" className="nav-link">Home</a>
-        <a href="/about" className="nav-link">About</a>
+        <div className="dropdown">
+          <a href="/about" className="nav-link">About</a>
+          <div className="dropdown-content">
+            <p>SpectreNews is a news aggregator that filters news based on political bias using the power of OPENAI GPT-4 Technology. Use the slider to filter Right, Left, or Neutral, News media</p>
+          </div>
+        </div>
       </div>
       <div className="bar">
         <input
