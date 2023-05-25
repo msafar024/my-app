@@ -1,0 +1,64 @@
+.bar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2b2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #e7e7e7;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(254, 252, 252);
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-link {
+  margin-right: 20px;
+  font-size: 16px;
+  color: rgb(251, 249, 249);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #757575;
+}
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-right: 20px; /* Add this line */
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 6px 12px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-right: 40px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  font-size: 41px;
+  color: #757575;
+  cursor: pointer;
+}
